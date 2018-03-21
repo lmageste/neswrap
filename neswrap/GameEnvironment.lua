@@ -96,8 +96,9 @@ function gameEnv:step(action, training)
 
         -- Loosing a life will trigger a terminal signal in training mode.
         -- We assume that a "life" IS an episode during training, but not during testing
-        if training and lives and lives < self._state.lives then
-            terminal = true
+        --if training and lives and lives < self._state.lives then
+        if terminal then
+            --terminal = true
             
             -- Penalty for getting killed.
             if self.gameOverPenalty > 0 then
