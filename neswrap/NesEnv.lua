@@ -28,7 +28,7 @@ function Env:__init(romPath, extraConfig)
         -- An additional reward signal can be provided
         -- after the end of one game.
         -- Note that many games don't change the score
-        -- when loosing or gaining a life.
+        -- when losing or gaining a life.
         gameOverReward=0,
         -- Screen display can be enabled.
         display=false,
